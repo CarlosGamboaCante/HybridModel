@@ -1,0 +1,5 @@
+ID_Fault;Name_Fault;slip_rate;Area;MmaxFault
+Fault 1;M01;11.97;4314.3138;7.7
+Fault 2;M02;13.97;2881.3616;7.3
+Fault 3;P02;3.7;3025.3626;7.4
+Fault 4;P01;3.7;4176.4118;7.5

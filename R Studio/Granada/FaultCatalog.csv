@@ -1,0 +1,20 @@
+ID_Fault,Name_Fault,slip_rate,Area,MmaxFault
+ES638,Norte de Cubillas,0.078,56.13,6.1
+ES639,E de Cubillas,0.104,19.97,5.8
+ES640,Oeste de Cubillas,0.173,23.09,5.8
+ES641,Obéilar - Pinos Puente,0.598,81.79,6
+ES643,Tocón-Obéilar,0.141,37.34,6.1
+ES644,Alitaje,0.131,41.77,5.9
+ES646,Pinos Puente,0.462,108.54,6.1
+ES648,Pedro Ruiz,0.131,38.51,5.9
+ES651,Atarfe,0.173,118.93,6.2
+ES653,El Fargue-Jun,0.404,135.10,6.3
+ES655,Escóznar,0.115,33.60,6.1
+ES656,Santa Fe,0.231,150.11,6.3
+ES658,Granada,0.139,193.99,6.5
+ES660,Belicena-Alhendín,0.231,60.04,6.2
+ES662,Huenes,0.481,88.27,6.2
+ES664,Dílar,0.381,95.84,6.1
+ES666,Padul-Nigüelas,0.460,79.35,6
+ES673,Ventas de Zafarraya,0.413,265.58,6.5
+ES675,Albuñuelas,0.183,42.43,6.2
