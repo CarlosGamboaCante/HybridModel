@@ -2,6 +2,8 @@
 
 **Version 1.0**
 
+![HybridModel](https://github.com/user-attachments/assets/9a718a26-0456-45e3-81bb-9f0b6274eacd)
+
 The *HybridModel* tool is designed to calculate the seismic parameters of fault-type and zone-type sources in a region, based on the earthquakes recorded in the seismic catalog. The program is structured to find all possible combinations of:
 
 - **β-value for fault-type sources (btf)**
