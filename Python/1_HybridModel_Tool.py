@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 # =========================================
 # 📌 HYBRIDMODEL TOOL: HybridModelBalancing
 # =========================================
@@ -37,7 +37,7 @@ def HybridModelBalancing(LYobs, Mmin, MmaxZone1, MmaxZone2, mu, dec, seismic_fil
         MmaxZone = np.arange(round(MmaxZone1,1),round(MmaxZone2+0.1, 1), 0.1) # Create a sequence for MmaxZone, ranging from MmaxZone1 to MmaxZone2, with increments of 0.1
 		
 		# Define the structure of the output DataFrame
-        OutputHM = pd.DataFrame(columns=['ID','MmaxC', 'btf', 'btz', 'MmaxZone'])
+        OutputHM = pd.DataFrame(columns=['ID','MmaxC', 'btf', 'btz', 'MmaxZone', 'Rf_Mo_Faults'])
 
         # ========================================================================================================================
 		# Step 1: Calculation of seismic moment (Mo) and moment rate (tn_Mo) for each bin of magnitude (m) in the seismic catalog
@@ -102,6 +102,12 @@ def HybridModelBalancing(LYobs, Mmin, MmaxZone1, MmaxZone2, mu, dec, seismic_fil
 				
                 Nmin_Mmin_MmaxC_Faults = Faults['NMin_MmaxC'].sum()
                 Mo_Mmin_MmaxC_Faults = Faults['MoMin_MmaxC'].sum()
+                
+                #==================================================
+                #Step 5.1: Calculate the Ratio Faults (Rf_Mo_Faults)
+                #==================================================
+                
+                Rf_Mo_Faults = Mo_Mmin_MmaxC_Faults / Mo_Mmin_MmaxC_Reg
 
                 # ========================================================================================================================
 				# Step 6: Calculate the cumulative seismic rate (Nmin) and moment rate (Mo) for the zone-type source between Mmin - MmaxC
@@ -136,7 +142,7 @@ def HybridModelBalancing(LYobs, Mmin, MmaxZone1, MmaxZone2, mu, dec, seismic_fil
                             continue
                         else: 
                             # Save only coherent results that meet the defined conditions 
-                            OutputHM = OutputHM.append({'ID':id,'MmaxC': round(MmaxC[k],1), 'btf': btf[j], 'btz': btz[i], 'MmaxZone': round(MmaxZone[h],1)}, ignore_index=True)
+                            OutputHM = OutputHM.append({'ID':id,'MmaxC': round(MmaxC[k],1), 'btf': btf[j], 'btz': btz[i], 'MmaxZone': round(MmaxZone[h],1), 'Rf_Mo_Faults': Rf_Mo_Faults}, ignore_index=True)
                             id = id + 1
 
                         current_iteration += 1
