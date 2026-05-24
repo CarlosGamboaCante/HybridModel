@@ -20,6 +20,7 @@ Users may also integrate selected combinations into a logic tree for final seism
 
 For any suggestions, questions, or comments regarding the use of the HybridModel (HM) tool, we have created the following group:
 https://groups.google.com/g/hybridmodel
+
 We will respond to these comments as soon as possible.
 
 ## Citation
