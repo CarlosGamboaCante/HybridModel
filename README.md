@@ -26,7 +26,7 @@ We will respond to these comments as soon as possible.
 ## Citation
 If you use the *HybridModel (HM)*, please cite it as:
 
-> Gamboa-Canté, C.; Rivas-Medina, A.; Benito, B. (2026). *HybridModel (HM): An Improved Tool for Distributing Fault-type and Zone-type Source Contributions in Seismic Hazard Assessment. Natural Hazards. https://doi.org/10.1007/s11069-026-08194-7*
+> Gamboa-Canté, C.; Rivas-Medina, A.; Benito, B. *HybridModel: an improved tool for distributing fault-type and zone-type source contributions in seismic hazard assessment. Nat Hazards 122, 500 (2026). https://doi.org/10.1007/s11069-026-08194-7*
 
 ## Reference for Methodology
 For more information on the formulation of the methodology, see:
