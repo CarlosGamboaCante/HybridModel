@@ -1,0 +1,15 @@
+# ============================================================
+# HybridModel Tool
+#
+# Required Python version:
+#     Python 3.11
+#  https://www.python.org/downloads/release/python-3110/
+#
+# Recommended package versions for compatibility
+# with the current version of HybridModel.
+# ============================================================
+
+numpy==1.26.4
+pandas==1.5.3
+scipy==1.11.4
+matplotlib==3.8.4
